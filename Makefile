@@ -43,8 +43,8 @@ build:
 wrappers:
 	@echo "Building compiler wrappers..."
 	@mkdir -p $(DEST)/$(BIN_DIR)
-	@$(CC) -Iinclude $(WRAPPER_SRC)/pcc.c -o $(DEST)/$(BIN_DIR)/pcc
-	@$(CC) -Iinclude $(WRAPPER_SRC)/pc++.c -o $(DEST)/$(BIN_DIR)/pc++
+    @$(CC) -Iinclude $(WRAPPER_SRC)/pcc.c ext/abstract.c -o $(DEST)/$(BIN_DIR)/pcc
+    @$(CC) -Iinclude $(WRAPPER_SRC)/pc++.c ext/abstract.c -o $(DEST)/$(BIN_DIR)/pc++
 	@chmod +x $(DEST)/$(BIN_DIR)/pcc
 	@chmod +x $(DEST)/$(BIN_DIR)/pc++
 	@echo "Wrappers built as 'pcc', 'pc++'."
