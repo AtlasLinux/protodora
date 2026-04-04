@@ -50,7 +50,7 @@ wrappers:
 	@echo "Wrappers built as 'pcc', 'pc++'."
 
 dirs:
-	@echo "Creating $PANDORA subdirectories..."
+	@echo "Creating '$(ENV_VAR)' subdirectories..."
 	@mkdir -p $(DEST)/include
 	@mkdir -p $(DEST)/lib
 	@mkdir -p $(DEST)/etc
