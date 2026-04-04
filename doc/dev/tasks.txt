@@ -1,1 +1,1 @@
-Ensure Pandora works on Atlas.
+Help file needs to be adjusted for the new file layout changes.
