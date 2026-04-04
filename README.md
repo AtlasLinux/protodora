@@ -43,10 +43,10 @@ Available commands:
 
 ## Directory Structure
 
-Pandora maintains an isolated environment under `$PANDORA` (default: `~/.PANDORA`):
+Pandora maintains an isolated environment under `$PANDORA` (default: `~/.pandora`):
 
 ```
-.PANDORA/
+.pandora/
 ├── bin/       # Pandora executable and compiler wrappers.
 ├── include/   # Header files for compiled packages.
 ├── lib/       # Library files for compiled packages.
