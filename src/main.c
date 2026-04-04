@@ -11,7 +11,7 @@ static char STORE_PATH[MAX_PATH];
 
 void init_paths() {
     const char *pandora = getenv("PANDORA");
-    if (!pandora) pandora = ".pandora";
+    if (!pandora) pandora = "pandora";
     snprintf(STORE_PATH, sizeof(STORE_PATH), "%s/store", pandora);
     make_dir(pandora);
     make_dir(STORE_PATH);
