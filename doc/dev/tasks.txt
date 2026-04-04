@@ -1,1 +1,1 @@
-Fix dependency handling to work as intended.
+Ensure Pandora works on Atlas.
