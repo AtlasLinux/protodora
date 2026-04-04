@@ -53,8 +53,8 @@ dirs:
 	@echo "Creating '$(ENV_VAR)' subdirectories..."
 	@mkdir -p $(DEST)/include
 	@mkdir -p $(DEST)/lib
-	@mkdir -p $(DEST)/etc
-	@echo "Directories ready as 'include', 'lib', and 'etc'."
+	@mkdir -p $(DEST)/etcetera
+	@echo "Directories ready as 'include', 'lib', 'etcetera'."
 
 env:
 	@echo "Configuring shell environment..."
