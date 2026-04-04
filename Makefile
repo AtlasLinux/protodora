@@ -21,6 +21,7 @@ else
 endif
 
 .PHONY: all setup build wrappers env dirs clean
+
 all: setup build wrappers env dirs
 
 setup:
@@ -37,7 +38,7 @@ setup:
 build:
 	@echo "Compiling 'main.c' and 'abstract.c'..."
 	@$(CC) $(CFLAGS) src/main.c ext/abstract.c -o $(DEST)/$(TARGET)
-	@echo "Build complete at '$(DEST)/$(TARGET)'."
+	@echo "Build complete: $(DEST)/$(TARGET)"
 
 wrappers:
 	@echo "Building compiler wrappers..."
@@ -49,11 +50,11 @@ wrappers:
 	@echo "Wrappers built as 'pcc', 'pc++'."
 
 dirs:
-	@echo "Creating '$PANDORA' subdirectories..."
+	@echo "Creating $PANDORA subdirectories..."
 	@mkdir -p $(DEST)/include
 	@mkdir -p $(DEST)/lib
 	@mkdir -p $(DEST)/etc
-	@echo "Directories ready at 'include', 'lib', 'etc'."
+	@echo "Directories ready as 'include', 'lib', and 'etc'."
 
 env:
 	@echo "Configuring shell environment..."
