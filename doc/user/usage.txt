@@ -2,6 +2,8 @@ Usage:
 
 pandora install <package>
 pandora remove <package>
-pandora update
+pandora update <package>
 pandora list
 pandora help
+pcc <compiler_args>
+pc++ <compiler_args>
