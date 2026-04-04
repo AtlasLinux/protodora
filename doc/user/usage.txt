@@ -1,0 +1,7 @@
+Usage:
+
+pandora install <package>
+pandora remove <package>
+pandora update
+pandora list
+pandora help
